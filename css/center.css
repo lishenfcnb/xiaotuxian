@@ -1,0 +1,348 @@
+.xtx_body {
+    padding: 25px 0 85px;
+    background-color: #f6f6f6;
+}
+
+.xtx_body .wrapper {
+    display: flex;
+    /* 开启felx */
+}
+
+
+/* 侧边框 */
+
+.xtx_body .aside {
+    width: 227px;
+    min-height: 1000px;
+    margin-right: 18px;
+    background-color: #fff;
+}
+
+.xtx_body .main {
+    flex: 1;
+    min-height: 100px;
+}
+
+
+/* 侧边框 */
+
+.xtx_body .aside .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 47px 0 32px;
+    /* border-bottom: 1px solid #f4f4f4; */
+}
+
+.xtx_body .aside .ont {
+    position: relative;
+    width: 93px;
+    height: 26px;
+    background-image: linear-gradient(264deg, #e05e2f 0%, #ea745e 95%);
+    border-radius: 13px;
+    text-align: center;
+    color: #f9f9f9;
+    line-height: 26px;
+    padding-left: 26px;
+}
+
+.xtx_body .aside h3 {
+    padding: 14px 0 12px;
+    color: #333333;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.xtx_body .aside p::before {
+    content: "";
+    position: absolute;
+    left: 11px;
+    top: 5px;
+    width: 15px;
+    height: 16px;
+    background-image: url(../images/vip_gold.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+/* 小链接 */
+
+.user_manage h4 {
+    padding: 33px 0 17px 53px;
+    font-size: 18px;
+    color: #333;
+    font-weight: 400;
+    border-top: 1px solid #f4f4f4;
+}
+
+.user_manage .wid {
+    margin-top: 8px;
+    padding: 20px 0 17px 53px;
+}
+
+.user_manage .links {
+    padding-left: 53px;
+}
+
+.user_manage .links a {
+    position: relative;
+    /* display: flex; */
+    display: block;
+    /* 块状元素，向下 */
+    font-size: 14px;
+    color: #666;
+    line-height: 42px;
+}
+
+.user_manage .links .art {
+    color: #5eb69c;
+    opacity: 1;
+}
+
+.user_manage .links .art i::before {
+    opacity: 1;
+    /* art类名一直开启原点 */
+}
+
+.user_manage .links i::before {
+    position: absolute;
+    left: -25px;
+    font-size: 26px;
+    color: #5eb69c;
+    opacity: 0;
+    /* 隐藏原点 */
+}
+
+.user_manage .links a:hover {
+    color: #5eb69c;
+}
+
+.user_manage .links a:hover i::before {
+    opacity: 1;
+}
+
+
+/* 主体头部 */
+
+.main .main_header {
+    display: flex;
+    height: 132px;
+    background-color: #fff;
+    padding: 19px 0 22px;
+    margin-bottom: 18px;
+}
+
+.main .main_header div:first-child {
+    border-right: 1px solid #f4f4f4;
+}
+
+.main_header div {
+    flex: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.main_header a,
+.main_header img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 修改主轴方向 开启垂直居中 */
+}
+
+.main_header span {
+    color: #333;
+    font-size: 16px;
+}
+
+
+/* 单独选中左边span进行padding-top */
+
+.main_left span {
+    padding-top: 16px;
+}
+
+
+/* .main_header i标签样式 */
+
+.main_right i {
+    font-size: 25px;
+    color: #e05e30;
+    font-weight: 560;
+}
+
+
+/* 公共部分 */
+
+.pannel {
+    padding: 28px 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+.ordes .pannel_header {
+    display: flex;
+    height: 43px;
+    justify-content: space-between;
+    text-align: center;
+    border-bottom: 1px solid #f4f4f4;
+    padding-left: 7px;
+}
+
+.ordes .pannel_header h4,
+.txt_main .li h4 {
+    color: #333;
+    font-size: 22px;
+    font-weight: 400;
+    margin-left: 8px;
+}
+
+.ordes .pannel_header a,
+.txt_main .li a {
+    padding-top: 8px;
+    font-size: 16px;
+    color: #999;
+}
+
+
+/* 订单内容 */
+
+.ordes .content li {
+    display: flex;
+    height: 137px;
+    border: 1px solid #f4f4f4;
+    margin-top: -1px;
+    /* 让两条border线条重叠 */
+    margin-bottom: 20px;
+}
+
+.ordes .content li:last-child {
+    margin-bottom: 0;
+}
+
+.content li .goods {
+    flex: 1;
+    padding: 17px 0 14px 12px;
+    margin-right: 128px;
+    display: flex;
+    align-items: center;
+}
+
+.content .goods .txt {
+    width: 0;
+    flex: 1;
+    /* width: 213px; */
+}
+
+.content .goods .txt h5 {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #333333;
+    font-size: 15px;
+    font-weight: 550;
+}
+
+
+/*  */
+
+.content li .status {
+    width: 120px;
+    font-size: 14px;
+    color: #e05e30;
+    font-weight: 540;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content li .status p {
+    font-size: 14px;
+    color: #999999;
+}
+
+
+/*  */
+
+.content li .pay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    width: 198px;
+    border-left: 1px solid #e8e8e8;
+    border-right: 1px solid #e8e8e8;
+    font-size: 14px;
+    color: #333333;
+}
+
+.content li .pay p:nth-child(1) {
+    color: #9a2e1f;
+}
+
+
+/*  */
+
+.content li .action {
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    line-height: 24px;
+}
+
+.content li .action a:first-child {
+    width: 100px;
+    height: 30px;
+    background-color: #5eb69c;
+    border-radius: 2px;
+    color: #fff;
+    margin: 0 auto;
+    line-height: 30px;
+    margin-bottom: 5px;
+}
+
+
+/* 收藏商品 */
+
+.txt_main ul {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 32px;
+}
+
+.txt_main .li {
+    height: 46px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #f4f4f4;
+}
+
+.txt_main li {
+    width: 171px;
+    height: 240px;
+}
+
+.txt_main img {
+    width: 160px;
+    height: 160px;
+}
+
+.txt_main .wz {
+    font-size: 16px;
+    color: #333333;
+}
+
+.txt_main i {
+    font-size: 15px;
+}
+
+.txt_main .shu {
+    font-size: 22px;
+    color: #9a2e1f;
+}
