@@ -1,0 +1,23 @@
+{
+  "id": "3174233",
+  "name": "皇冠",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "4933869",
+      "name": "点",
+      "font_class": "dian",
+      "unicode": "ec1e",
+      "unicode_decimal": 60446
+    },
+    {
+      "icon_id": "3402116",
+      "name": "皇冠",
+      "font_class": "huangguan",
+      "unicode": "e6b4",
+      "unicode_decimal": 59060
+    }
+  ]
+}
